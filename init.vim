@@ -15,6 +15,7 @@ silent! if plug#begin('~/.vim/plugged')
     Plug 'Xuyuanp/nerdtree-git-plugin'
 
     Plug 'drewtempelmeyer/palenight.vim'
+    Plug 'morhetz/gruvbox'
 call plug#end()
 endif
 
@@ -58,7 +59,7 @@ set foldmethod=syntax
 " color scheme config
 set background=dark
 let g:gruvbox_contrast_dark='hard'
-colorscheme palenight
+colorscheme gruvbox
 
 " Ale config
 let g:ale_sign_column_always = 1
