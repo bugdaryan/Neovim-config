@@ -310,7 +310,10 @@ let g:lmap.g.P = ['Gpull', 'Pull']
 let g:lmap.g.l = ['GV', 'Log Tree']
 let g:lmap.g.b = ['MerginalToggle', 'Merginal toggle']
 
-
+nnoremap <silent> ,<space> :nohlsearch<CR>
+nnoremap <silent> <C-k><C-d> :OmniSharpCodeFormat<CR>
+nnoremap <silent> <A-S-n> :OmniSharpFixUsings<CR>
+nnoremap <silent> <A-S-m> :OmniSharpGetCodeActions<CR>
 " Use the stdio OmniSharp-roslyn server
 let g:OmniSharp_server_stdio = 1
 
